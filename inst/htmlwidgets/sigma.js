@@ -27,9 +27,10 @@ HTMLWidgets.widget({
     
     // update the sigma instance
     sigma.parsers.gexf(
-      data,
-      instance.sig,
+      data,          // parsed gexf data
+      instance.sig,  // sigma instance we created in initialize
       function() {
+        // need to call refresh to reflect new settings and data
         instance.sig.refresh();
       }
     );
