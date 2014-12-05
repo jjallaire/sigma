@@ -11,7 +11,7 @@ This package is intended as a simple demonstration of building R bindings to Jav
 You can install the **sigma** package from GitHub as follows:
 
 ```r
-devtools::install_github("ramnathv/htmlwidgets", "jjallaire/sigma")
+devtools::install_github(c("ramnathv/htmlwidgets", "jjallaire/sigma"))
 ```
 
 #### Usage
