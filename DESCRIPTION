@@ -1,0 +1,11 @@
+Package: sigma
+Type: Package
+Title: Interface to sigma.js Graph Visualization Library
+Version: 1.0
+Date: 2014-12-05
+Author: Alexis Jacomy and JJ Allaire
+Maintainer: JJ Allaire <jj@rstudio.com>
+Description: Interface to sigma.js Network Visualization Library
+License: MIT + file LICENSE
+Imports:
+    htmlwidgets (>= 0.3)
