@@ -1,7 +1,8 @@
 
 #' @import htmlwidgets
 #' @export
-sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE) {
+sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE,
+                  width = NULL, height = NULL) {
   
   # read the gexf file
   data <- paste(readLines(gexf), collapse="\n")
@@ -19,7 +20,7 @@ sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE) {
   )
   
   # create the widget
-  htmlwidgets::createWidget("sigma", x)
+  htmlwidgets::createWidget("sigma", x, width = width, height = height)
 }
 
 #' @export

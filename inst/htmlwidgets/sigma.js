@@ -25,7 +25,7 @@ HTMLWidgets.widget({
     for (var name in x.settings)
       instance.sig.settings(name, x.settings[name]);
     
-    // update the sigma instnace
+    // update the sigma instance
     sigma.parsers.gexf(
       data,
       instance.sig,
